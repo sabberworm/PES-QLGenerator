@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019A9768135B886D00EDC0A7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9767135B886D00EDC0A7 /* QuickLook.framework */; };
+		019A976A135B886D00EDC0A7 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9769135B886D00EDC0A7 /* ApplicationServices.framework */; };
+		019A976C135B886D00EDC0A7 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A976B135B886D00EDC0A7 /* CoreServices.framework */; };
+		019A976E135B886D00EDC0A7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A976D135B886D00EDC0A7 /* CoreFoundation.framework */; };
+		019A9774135B886D00EDC0A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 019A9772135B886D00EDC0A7 /* InfoPlist.strings */; };
+		019A9777135B886D00EDC0A7 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.c */; };
+		019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.c */; };
+		019A977B135B886D00EDC0A7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A977A135B886D00EDC0A7 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		019A9764135B886D00EDC0A7 /* PES-QLImporter.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PES-QLImporter.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A9767135B886D00EDC0A7 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		019A9769135B886D00EDC0A7 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		019A976B135B886D00EDC0A7 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		019A976D135B886D00EDC0A7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		019A9771135B886D00EDC0A7 /* PES-QLImporter-Info.plist */ = {isa = PBXFileReference; path = "PES-QLImporter-Info.plist"; sourceTree = "<group>"; };
+		019A9773135B886D00EDC0A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		019A9775135B886D00EDC0A7 /* PES-QLImporter-Prefix.pch */ = {isa = PBXFileReference; path = "PES-QLImporter-Prefix.pch"; sourceTree = "<group>"; };
+		019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		019A977A135B886D00EDC0A7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		019A975F135B886D00EDC0A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9768135B886D00EDC0A7 /* QuickLook.framework in Frameworks */,
+				019A976A135B886D00EDC0A7 /* ApplicationServices.framework in Frameworks */,
+				019A976C135B886D00EDC0A7 /* CoreServices.framework in Frameworks */,
+				019A976E135B886D00EDC0A7 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019A9757135B886D00EDC0A7 = {
+			isa = PBXGroup;
+			children = (
+				019A976F135B886D00EDC0A7 /* PES-QLImporter */,
+				019A9766135B886D00EDC0A7 /* Frameworks */,
+				019A9765135B886D00EDC0A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		019A9765135B886D00EDC0A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				019A9764135B886D00EDC0A7 /* PES-QLImporter.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		019A9766135B886D00EDC0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				019A9767135B886D00EDC0A7 /* QuickLook.framework */,
+				019A9769135B886D00EDC0A7 /* ApplicationServices.framework */,
+				019A976B135B886D00EDC0A7 /* CoreServices.framework */,
+				019A976D135B886D00EDC0A7 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		019A976F135B886D00EDC0A7 /* PES-QLImporter */ = {
+			isa = PBXGroup;
+			children = (
+				019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.c */,
+				019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.c */,
+				019A977A135B886D00EDC0A7 /* main.c */,
+				019A9770135B886D00EDC0A7 /* Supporting Files */,
+			);
+			path = "PES-QLImporter";
+			sourceTree = "<group>";
+		};
+		019A9770135B886D00EDC0A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				019A9771135B886D00EDC0A7 /* PES-QLImporter-Info.plist */,
+				019A9772135B886D00EDC0A7 /* InfoPlist.strings */,
+				019A9775135B886D00EDC0A7 /* PES-QLImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		019A9760135B886D00EDC0A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		019A9763135B886D00EDC0A7 /* PES-QLImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019A977E135B886D00EDC0A7 /* Build configuration list for PBXNativeTarget "PES-QLImporter" */;
+			buildPhases = (
+				019A975E135B886D00EDC0A7 /* Sources */,
+				019A975F135B886D00EDC0A7 /* Frameworks */,
+				019A9760135B886D00EDC0A7 /* Headers */,
+				019A9761135B886D00EDC0A7 /* Resources */,
+				019A9762135B886D00EDC0A7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PES-QLImporter";
+			productName = "PES-QLImporter";
+			productReference = 019A9764135B886D00EDC0A7 /* PES-QLImporter.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		019A9759135B886D00EDC0A7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 019A975C135B886D00EDC0A7 /* Build configuration list for PBXProject "PES-QLImporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 019A9757135B886D00EDC0A7;
+			productRefGroup = 019A9765135B886D00EDC0A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				019A9763135B886D00EDC0A7 /* PES-QLImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		019A9761135B886D00EDC0A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9774135B886D00EDC0A7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		019A9762135B886D00EDC0A7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		019A975E135B886D00EDC0A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A9777135B886D00EDC0A7 /* GenerateThumbnailForURL.c in Sources */,
+				019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.c in Sources */,
+				019A977B135B886D00EDC0A7 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		019A9772135B886D00EDC0A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				019A9773135B886D00EDC0A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		019A977C135B886D00EDC0A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		019A977D135B886D00EDC0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		019A977F135B886D00EDC0A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PES-QLImporter/PES-QLImporter-Prefix.pch";
+				INFOPLIST_FILE = "PES-QLImporter/PES-QLImporter-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		019A9780135B886D00EDC0A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PES-QLImporter/PES-QLImporter-Prefix.pch";
+				INFOPLIST_FILE = "PES-QLImporter/PES-QLImporter-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		019A975C135B886D00EDC0A7 /* Build configuration list for PBXProject "PES-QLImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A977C135B886D00EDC0A7 /* Debug */,
+				019A977D135B886D00EDC0A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		019A977E135B886D00EDC0A7 /* Build configuration list for PBXNativeTarget "PES-QLImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A977F135B886D00EDC0A7 /* Debug */,
+				019A9780135B886D00EDC0A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 019A9759135B886D00EDC0A7 /* Project object */;
+}

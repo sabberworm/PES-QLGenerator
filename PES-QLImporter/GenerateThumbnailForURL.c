@@ -2,6 +2,8 @@
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
 
+#include <Cocoa/Cocoa.h>
+
 /* -----------------------------------------------------------------------------
     Generate a thumbnail for file
 

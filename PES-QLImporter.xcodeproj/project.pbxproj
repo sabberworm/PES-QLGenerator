@@ -12,8 +12,8 @@
 		019A976C135B886D00EDC0A7 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A976B135B886D00EDC0A7 /* CoreServices.framework */; };
 		019A976E135B886D00EDC0A7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A976D135B886D00EDC0A7 /* CoreFoundation.framework */; };
 		019A9774135B886D00EDC0A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 019A9772135B886D00EDC0A7 /* InfoPlist.strings */; };
-		019A9777135B886D00EDC0A7 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.c */; };
-		019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.c */; };
+		019A9777135B886D00EDC0A7 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.m */; };
+		019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.m */; };
 		019A977B135B886D00EDC0A7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A977A135B886D00EDC0A7 /* main.c */; };
 		019A9782135B887D00EDC0A7 /* PESHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9781135B887D00EDC0A7 /* PESHandler.framework */; };
 		019A9784135B8B0800EDC0A7 /* PES-QLImporter.qlgenerator in Copy Files */ = {isa = PBXBuildFile; fileRef = 019A9764135B886D00EDC0A7 /* PES-QLImporter.qlgenerator */; };
@@ -43,8 +43,8 @@
 		019A9771135B886D00EDC0A7 /* PES-QLImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PES-QLImporter-Info.plist"; sourceTree = "<group>"; };
 		019A9773135B886D00EDC0A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		019A9775135B886D00EDC0A7 /* PES-QLImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PES-QLImporter-Prefix.pch"; sourceTree = "<group>"; };
-		019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		019A977A135B886D00EDC0A7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		019A9781135B887D00EDC0A7 /* PESHandler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PESHandler.framework; path = "../../../Library/Developer/Xcode/DerivedData/PESHandler-glkjgerdepjzlhhgtwlvpcemvizj/Build/Products/Debug/PESHandler.framework"; sourceTree = "<group>"; };
 		019A9785135C01B400EDC0A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -100,8 +100,8 @@
 		019A976F135B886D00EDC0A7 /* PES-QLImporter */ = {
 			isa = PBXGroup;
 			children = (
-				019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.c */,
-				019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.c */,
+				019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.m */,
+				019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.m */,
 				019A977A135B886D00EDC0A7 /* main.c */,
 				019A9770135B886D00EDC0A7 /* Supporting Files */,
 			);
@@ -199,8 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019A9777135B886D00EDC0A7 /* GenerateThumbnailForURL.c in Sources */,
-				019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.c in Sources */,
+				019A9777135B886D00EDC0A7 /* GenerateThumbnailForURL.m in Sources */,
+				019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.m in Sources */,
 				019A977B135B886D00EDC0A7 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

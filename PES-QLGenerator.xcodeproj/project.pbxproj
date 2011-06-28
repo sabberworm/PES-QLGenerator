@@ -16,7 +16,8 @@
 		019A9779135B886D00EDC0A7 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.m */; };
 		019A977B135B886D00EDC0A7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 019A977A135B886D00EDC0A7 /* main.c */; };
 		019A9786135C01B400EDC0A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A9785135C01B400EDC0A7 /* Cocoa.framework */; };
-		019A97C7135C3E7B00EDC0A7 /* PESHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A97C6135C3E7B00EDC0A7 /* PESHandler.framework */; };
+		01F0EABC136ABC7E000DA3C0 /* PESHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0EABB136ABC7E000DA3C0 /* PESHandler.framework */; };
+		01F0EABD136ABCB9000DA3C0 /* PESHandler.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01F0EABB136ABC7E000DA3C0 /* PESHandler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				01F0EABD136ABCB9000DA3C0 /* PESHandler.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +46,7 @@
 		019A9778135B886D00EDC0A7 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		019A977A135B886D00EDC0A7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		019A9785135C01B400EDC0A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		019A97C6135C3E7B00EDC0A7 /* PESHandler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PESHandler.framework; path = "../../../Library/Developer/Xcode/DerivedData/PESHandler-glkjgerdepjzlhhgtwlvpcemvizj/Build/Products/Debug/PESHandler.framework"; sourceTree = "<group>"; };
+		01F0EABB136ABC7E000DA3C0 /* PESHandler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PESHandler.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 				019A976C135B886D00EDC0A7 /* CoreServices.framework in Frameworks */,
 				019A976E135B886D00EDC0A7 /* CoreFoundation.framework in Frameworks */,
 				019A9786135C01B400EDC0A7 /* Cocoa.framework in Frameworks */,
-				019A97C7135C3E7B00EDC0A7 /* PESHandler.framework in Frameworks */,
+				01F0EABC136ABC7E000DA3C0 /* PESHandler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +69,7 @@
 		019A9757135B886D00EDC0A7 = {
 			isa = PBXGroup;
 			children = (
-				019A976F135B886D00EDC0A7 /* PES-QLImporter */,
+				019A976F135B886D00EDC0A7 /* PES-QLGenerator */,
 				019A9766135B886D00EDC0A7 /* Frameworks */,
 				019A9765135B886D00EDC0A7 /* Products */,
 			);
@@ -84,7 +86,7 @@
 		019A9766135B886D00EDC0A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				019A97C6135C3E7B00EDC0A7 /* PESHandler.framework */,
+				01F0EABB136ABC7E000DA3C0 /* PESHandler.framework */,
 				019A9785135C01B400EDC0A7 /* Cocoa.framework */,
 				019A9767135B886D00EDC0A7 /* QuickLook.framework */,
 				019A9769135B886D00EDC0A7 /* ApplicationServices.framework */,
@@ -94,7 +96,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		019A976F135B886D00EDC0A7 /* PES-QLImporter */ = {
+		019A976F135B886D00EDC0A7 /* PES-QLGenerator */ = {
 			isa = PBXGroup;
 			children = (
 				019A9776135B886D00EDC0A7 /* GenerateThumbnailForURL.m */,
@@ -102,7 +104,7 @@
 				019A977A135B886D00EDC0A7 /* main.c */,
 				019A9770135B886D00EDC0A7 /* Supporting Files */,
 			);
-			path = "PES-QLImporter";
+			path = "PES-QLGenerator";
 			sourceTree = "<group>";
 		};
 		019A9770135B886D00EDC0A7 /* Supporting Files */ = {
@@ -256,12 +258,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/PESHandler-glkjgerdepjzlhhgtwlvpcemvizj/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/PESHandler-glkjgerdepjzlhhgtwlvpcemvizj/Build/Products/Release\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PES-QLImporter/PES-QLGenerator-Prefix.pch";
-				INFOPLIST_FILE = "PES-QLImporter/PES-QLGenerator-Info.plist";
+				GCC_PREFIX_HEADER = "PES-QLGenerator/PES-QLGenerator-Prefix.pch";
+				INFOPLIST_FILE = "PES-QLGenerator/PES-QLGenerator-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "PES-QLGenerator";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -277,11 +281,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/PESHandler-glkjgerdepjzlhhgtwlvpcemvizj/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/PESHandler-glkjgerdepjzlhhgtwlvpcemvizj/Build/Products/Release\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PES-QLImporter/PES-QLGenerator-Prefix.pch";
-				INFOPLIST_FILE = "PES-QLImporter/PES-QLGenerator-Info.plist";
+				GCC_PREFIX_HEADER = "PES-QLGenerator/PES-QLGenerator-Prefix.pch";
+				INFOPLIST_FILE = "PES-QLGenerator/PES-QLGenerator-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "PES-QLGenerator";
 				WRAPPER_EXTENSION = qlgenerator;
